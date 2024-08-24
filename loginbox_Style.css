@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+
+@keyframes login-box {
+    0% {
+        border: 2px solid red;
+        box-shadow: 0px 0px 10px red;
+    }
+
+    25% {
+        border: 2px solid yellow;
+        box-shadow: 0px 0px 10px yellow;
+    }
+
+    50% {
+        border: 2px solid blue;
+        box-shadow: 0px 0px 10px blue;
+    }
+
+    75% {
+        border: 2px solid green;
+        box-shadow: 0px 0px 10px green;
+    }
+
+    100% {
+        border: 2px solid red;
+        box-shadow: 0px 0px 10px red;
+    }
+}
+
+.light-box {
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    animation: light-box 5s none;
+    position: absolute;
+}
+
+.top-head {
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    border-bottom: 2px solid rgb(175, 175, 175);
+}
+
+.head-contant {
+    padding: 15px 10px;
+    position: relative;
+    right: 25%;
+    border-left: 1px solid rgb(175, 175, 175);
+    border-right: 1px solid rgb(175, 175, 175);
+    float: right;
+}
+
+.head-contant a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.head-contant a:active {
+    color: blueviolet;
+}
+
+.login-box {
+    max-width: 40vh;
+    min-height: 45vh;
+    color: gainsboro;
+    padding: 30px 20px;
+    border: 2px solid yellowgreen;
+    border-radius: 10%;
+    position: relative;
+    margin: auto;
+    top: 27vh;
+    animation: login-box 5s infinite;
+    background-color: black;
+    font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-box .label {
+    display: block;
+    font-size: large;
+    color: gainsboro;
+    margin: 10px 5px;
+}
+
+.login-box .input {
+    width: 96%;
+    margin: auto;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 5px;
+}
+
+.label-age-check {
+    margin: 10px;
+    display: inline-block;
+}
+
+#age-check:checked {
+    margin: -10px;
+}
+
+#age-check {
+    margin: -10px;
+}
+
+.login-box button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    animation: login-box 3s infinite;
+    font-weight: bolder;
+    background-color: blueviolet;
+}
+
+.login-box button:active {
+    scale: 0.95;
+    background-color: gainsboro;
+}
+
+.sign-in:active .login-box {
+    transform: scale(0.8), skewX(180deg);
+    transition-duration: 2s;
+}
